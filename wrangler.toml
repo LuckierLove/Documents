@@ -1,0 +1,8 @@
+name = "my-rspress-site"
+main = "src/index.ts"
+compatibility_date = "2026-01-07"
+
+# 关键配置：指定静态资源目录
+[assets]
+directory = "./doc_build"
+binding = "ASSETS"
