@@ -1,0 +1,79 @@
+---
+title: Clash Verge Rev教程
+---
+
+# Clash Verge Rev 教程
+## 介绍
+Clash Verge Rev以下简称（Clash）特点如下：
+- 基于性能强劲的 Rust 和 Tauri 2 框架
+- 内置Clash.Meta(mihomo)内核，并支持切换 Alpha 版本内核
+- 简洁美观的用户界面，支持自定义主题颜色、代理组/托盘图标以及 CSS Injection
+- 配置文件管理和增强（Merge 和 Script），配置文件语法提示
+- 系统代理和守卫、TUN(虚拟网卡) 模式
+- 可视化节点和规则编辑
+- WebDav 配置备份和同步
+## 下载
+### 通过Github下载
+在[Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases)页面选择适合当前操作系统的最新版本下载
+
+例如：当前为Windows11 64位平台则选择
+<img src="/images/index/image.png" alt="下载Windows版本" width="400px"/>
+
+注：Github下载速度较慢，建议使用代理工具下载
+### 使用Cloudflare CDN下载
+在[Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases)页面选择适合当前操作系统的最新版本右键选择复制链接地址
+<img src="/images/index/image-1.png" alt="复制下载链接" width="300px"/>
+
+链接地址格式如下：
+```url
+https://github.com/clash-verge-rev/clash-verge-rev/releases/download/autobuild/Clash.Verge_2.4.5+autobuild.0107.1889f18_x64-setup.exe
+```
+将链接地址中的`github.com`替换为`xget.luckierlove.dev/gh`，得到如下链接地址：
+```url
+https://xget.luckierlove.dev/gh/clash-verge-rev/clash-verge-rev/releases/download/autobuild/Clash.Verge_2.4.5+autobuild.0107.1889f18_x64-setup.exe
+```
+使用浏览器打开上述链接地址即可快速下载
+## 安装
+下载完成后双击安装包进行安装，安装过程按照提示操作即可
+>[!TIP]
+>安装过程中可能会被Windows Defender拦截，选择“更多信息”->“仍要运行”即可继续安装
+>
+>或提示“你要允许此应用对你的设备进行更改吗？”选择“是”即可继续安装
+## 首次运行
+安装完成后，桌面会生成Clash Verge Rev的快捷方式，双击运行即可
+### 导入订阅
+在左侧边栏选择“订阅”选项卡，在输入框中输入或粘贴订阅链接地址，点击“导入”按钮即可导入订阅
+<img src="/images/index/image-2.png" alt="导入订阅" width="400px"/>
+
+### 选择节点
+导入订阅后，切换到“代理”选项卡，选择一个节点组
+#### 测速并排序
+点击节点组上方的“测试延迟”按钮，Clash会自动对该节点组中的所有节点进行测速
+再将排序方式修改为“按延迟排序”，即可将延迟最低的节点排在最前面，选择一个延迟较低的节点进行连接（双击节点即可）
+<img src="/images/index/image-3.png" alt="测速并排序" width="400px"/>
+
+### 启用系统代理
+切换到“首页”选项卡，将“系统代理”开关打开，即可启用系统代理
+<img src="/images/index/image-4.png" alt="启用系统代理" width="400px"/>
+
+>[!TIP]
+>系统代理启用后，Clash会自动将系统的网络流量通过所选节点进行代理
+>如果需要关闭系统代理，只需将“系统代理”开关关闭即可
+>
+>如遇到电脑重启后无法上网的情况，可尝试打开Clash并关闭系统代理
+### 使用TUN模式（可选）
+如果需要使用TUN（虚拟网卡）模式，请将“虚拟网卡模式”开关打开
+<img src="/images/index/image-5.png" alt="启用TUN模式" width="400px"/>
+>[!WARNING]
+>启用TUN模式需要管理员权限，系统会提示安装虚拟网卡驱动，选择“是”进行安装
+>
+>启用TUN模式后，Clash Verge Rev会创建一个虚拟网卡来处理网络流量，通常可以获得更好的兼容性和性能
+>
+>适用于需要代理所有流量的场景，包括本地应用程序和系统服务
+
+## 其他设置
+### 开机自启并最小化到托盘
+在左侧边栏选择“设置”选项卡，找到“系统设置”部分
+
+将“开机自启”开关打开，并将“静默启动”开关打开
+<img src="/images/index/image-6.png" alt="开机自启设置" width="400px"/>![alt text]

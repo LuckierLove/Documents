@@ -1,7 +1,7 @@
 [
-    "index",
-{
-    "type": "file",
-    "name": "introduction",
-    "label": "介绍"
-}]
+    {
+        "type": "file",
+        "name": "index",
+        "label": "Clash Verge Rev教程"
+    }
+]

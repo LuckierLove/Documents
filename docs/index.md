@@ -2,36 +2,33 @@
 pageType: home
 
 hero:
-  name: My Site
-  text: A cool website!
-  tagline: This is the tagline
+  name: 陈伯的技术教程文档
+  text: 常见技术问题解决方案与教程
+  tagline: 通俗易懂的技术文档，助你快速掌握技能
   actions:
     - theme: brand
-      text: Quick Start
+      text: 开始阅读
       link: /guide/
-    - theme: alt
-      text: GitHub
-      link: https://github.com/web-infra-dev/rspress
   image:
-    src: https://avatars.githubusercontent.com/u/56892468?s=200&v=4
+    src: https://assets.rspack.rs/rspress/rspress-logo.svg
     alt: Logo
 features:
-  - title: Blazing fast build speed
-    details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.
+  - title: 文档与博客二合一
+    details: 同时支持文档和博客功能，满足多样化的内容需求。
     icon: 🏃🏻‍♀️
-  - title: Support for MDX content writing
-    details: MDX is a powerful way to write content, allowing you to use React components in Markdown.
+  - title: 使用 MDX 编写内容
+    details: MDX 是 Markdown 与 React 组件的结合体，允许在文档中直接使用 React 组件，提升文档的交互性和可扩展性。
     icon: 📦
-  - title: Built-in full-text search
-    details: Automatically generates a full-text search index for you during construction, providing out-of-the-box full-text search capabilities.
+  - title: 内置全文搜索功能
+    details: 能够通过关键词快速查找所需内容，提高阅读效率。
     icon: 🎨
-  - title: Simpler I18n solution
-    details: With the built-in I18n solution, you can easily provide multi-language support for documents or components.
+  - title: 多语言支持
+    details: 预计支持多语言内容，方便不同语言的用户访问和阅读。
     icon: 🌍
-  - title: Static site generation
-    details: In production, it automatically builds into static HTML files, which can be easily deployed anywhere.
+  - title: 部署为静态网站
+    details: 通过Rspress生成静态网站，易于部署和托管在CloudFlare，提升访问速度和稳定性。
     icon: 🌈
-  - title: Providing multiple custom capabilities
-    details: Through its extension mechanism, you can easily extend theme UI and build process.
+  - title: 网站可扩展性
+    details: 后期计划支持插件系统，允许用户根据需求扩展网站功能。
     icon: 🔥
 ---
