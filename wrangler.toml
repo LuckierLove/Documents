@@ -1,4 +1,4 @@
-name = "my-rspress-site"
+name = "documents"
 main = "src/index.ts"
 compatibility_date = "2026-01-07"
 
